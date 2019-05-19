@@ -787,6 +787,30 @@ letter-spacing: 0px;
     margin: 20px 0;
   }
 }
+
+.up {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      padding: 15px;
+      border-radius: 50%;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      i {
+        font-size: 22px;
+        color: #fff;
+      }
+  }
+}
 .info-team {
   width: 58%;
   margin-left: 15px;
@@ -1855,6 +1879,34 @@ background-color: rgba(244,178,0,0.8);
   text-align: right;
 }
 @media (max-width: 767px) {
+  .tab-content>.tab-pane {
+    margin-top: 20px;
+  }
+  .mark-news {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .h1-firstinfo .posit-img {
+    top: 8px;
+  }
+  .h-footer {
+    margin-top: 10px;
+  }
+  .pd-15 {
+    padding: 0 10px;
+  }
+  .bg-right {
+    display: none;
+  }
+  .mob-margin {
+    margin: 20px 0;
+  }
+  .img-popular {
+    min-height: 300px;
+  }
+  .popular {
+    margin-top: 30px;
+  }
   .about-pos-img {
     display: none;
   }
@@ -1944,7 +1996,7 @@ background-color: rgba(244,178,0,0.8);
     padding: 0 5px;
   }
   #booking input, #booking textarea {
-    width: 50%;
+    width: 90%;
     margin-left: 5px;
   }
   .carret {
@@ -2014,6 +2066,9 @@ background-color: rgba(244,178,0,0.8);
 @media (max-width: 550px) {
   .par-1 {
     min-height: 570px;
+  }
+  .lb-nav {
+    height: 30vh;
   }
 }
 @media (max-height: 600px) {

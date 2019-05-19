@@ -105,3 +105,13 @@ function f_acc(){
 // открываем или скрываем блок под заголовоком, по которому кликнули
     $(this).next().slideToggle(500);
 }
+
+var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-200);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
